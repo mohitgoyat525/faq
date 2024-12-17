@@ -12,7 +12,7 @@ const Faq = () => {
           <div className='faq-parent'>
               {FAQ_ITEM_LIST.map((obj, i) => (
                   <div key={i} className='max-w-[522px] mx-auto border border-solid  p-4 rounded-xl mb-3'>
-                  <div onClick={()=>handler(i)}   className='flex items-center justify-between'>
+                  <div onClick={()=>handler(i)}   className='flex items-center justify-between cursor-pointer'>
                       {obj.title} 
                           <p >{value === i ? "-" : "+"}</p>
                       </div>
